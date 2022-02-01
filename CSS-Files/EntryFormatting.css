@@ -1,0 +1,172 @@
+body {
+  --peach: rgb(241, 217, 213, 1);
+
+  color: var(--peach);
+  font-size: 30px;
+
+  font-family: "Monoid";
+}
+
+.naviagation {
+  min-width: 500px;
+  height: 50%;
+  width: 40%;
+
+  margin-top: 4px;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  font-size: 0.15em;
+
+  /* background-color: black; */
+}
+
+.navigationText {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.date {
+  width: 940px;
+  height: 200px;
+
+  position: fixed;
+  /* background-color: paleturquoise; */
+
+  right: 0px;
+  bottom: -50%;
+
+  font-size: 170px;
+  z-index: 1000;
+
+  transform-origin: right top;
+  transform: rotateZ(90deg);
+}
+
+.title-container {
+  margin-left: 20px;
+}
+
+.title-top {
+  width: 70%;
+}
+
+.title-bottom {
+  width: 70%;
+}
+
+.description {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30px;
+
+  font-size: 0.5em;
+  opacity: 0.8;
+}
+
+.title-bottom-parent {
+  position: relative;
+
+  display: flex;
+  align-items: top;
+}
+
+.fullGallery-container {
+  position: relative;
+
+  display: flex;
+
+  width: 50%;
+  height: auto;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  /* background-color: crimson; */
+  transition: 0.2s;
+}
+
+.gallery-container {
+  /* position: absolute; */
+  position: relative;
+
+  display: flex;
+  width: auto;
+  height: auto;
+  /* right: 50%; */
+
+  margin: 10px;
+  /* background-color: darkblue; */
+  transition: 0.2s;
+  transform: translateZ(1000px);
+}
+
+.gallery {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  justify-content: space-around;
+
+  border: 5px solid var(--peach);
+  box-shadow: 0px 0px 10px var(--peach);
+  /* background-color: chartreuse; */
+  background-color: var(--darkPurple);
+}
+
+.galleryImage {
+  width: auto;
+  height: 300px;
+  border-radius: 20px;
+  margin: 10px;
+  /* object-fit: contain; */
+}
+
+.data-container {
+  position: relative;
+  min-width: 240px;
+  width: 252px;
+  height: 500px;
+
+  /* background-color: brown; */
+
+  /* border: 8px double var(--peach); */
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px var(--peach); */
+}
+
+.data-flex-container {
+  position: absolute;
+
+  /* width: 50%; */
+
+  top: 0px;
+  bottom: 70%;
+  left: 0px;
+  right: 0px;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-content: center;
+  align-items: flex-end;
+
+  transform-style: preserve-3d;
+  /* background-color: aliceblue; */
+}
+
+.data-front {
+  transform: rotateX(-50deg) rotateY(-45deg) translateZ(55px);
+}
+
+.data-back {
+  transform: rotateX(-50deg) rotateY(-45deg) translateZ(-55px);
+}
+
+.change {
+  margin-left: 10px;
+}
+
+.delete-form {
+  margin-bottom: 15px;
+}

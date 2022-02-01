@@ -1,0 +1,148 @@
+body {
+  color: blue;
+  font-family: "YourFontName";
+}
+
+@font-face {
+  font-family: "YourFontName";
+  src: url("../Extra/Fonts/Monoid-Regular.ttf");
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: blue;
+  height: 300px;
+
+  columns: col;
+}
+
+.parent {
+  height: 20%;
+  width: 70%;
+  background-color: green;
+  /* font-size: 50vh; */
+}
+
+.glowText {
+  /* font-size: vh; */
+  /* size: inherit; */
+
+  /* height: 20%; */
+
+  width: 60%;
+  height: 240px;
+
+  /* font-size: 10%; */
+  /* font-size: 10vw; */
+  background-color: red;
+  /* z-index: 100;
+  text-shadow: 0px 0px 5px rgb(241, 217, 213, 127.5); */
+  /* color: rgb(241, 217, 213); */
+}
+
+.il {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.image {
+  size: inherit;
+  width: 100%;
+
+  object-fit: contain;
+
+  max-width: 600px;
+}
+
+/* Project entry formatting */
+.projectEntry {
+  position: relative;
+  width: 30%;
+  max-width: 600px;
+  margin-top: 0px;
+}
+
+.relativePos {
+  position: relative;
+}
+
+.roundShadow {
+  /* size: inherit; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px black;
+
+  max-width: 600px;
+
+  margin-bottom: 10px;
+}
+
+.background {
+  z-index: -2;
+  position: absolute;
+  left: -10px;
+  bottom: -10px;
+
+  size: inherit;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-left: 20px;
+
+  background-color: rgba(10, 1, 25, 1);
+  border: 3px rgb(241, 217, 213) solid;
+  box-shadow: 0px 0px 15px rgb(241, 217, 213, 0.5);
+  border-radius: 20px;
+}
+.contentSpacer {
+  width: 65px;
+  height: 10px;
+
+  background-color: rgb(60, 42, 79, 0);
+}
+
+.codeTitle {
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  font-size: 35px;
+  color: blue;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.glowText2 {
+  size: inherit;
+  text-shadow: 0px 0px 5px rgb(241, 217, 213, 127.5);
+  font-size: 230%;
+  color: rgb(241, 217, 213);
+}
+
+.glowText3 {
+  size: inherit;
+  text-shadow: 0px 0px 5px rgb(241, 217, 213, 127.5);
+  font-size: 150%;
+  color: rgb(241, 217, 213);
+}
+
+.bottomPadding {
+  margin-bottom: 15px;
+}
+
+.text {
+  size: inherit;
+  font-size: 90%;
+  padding-left: 10px;
+  color: rgba(241, 217, 213, 0.5);
+
+  text-shadow: 0px 0px 10px rgb(241, 217, 213, 0.5);
+
+  white-space: normal;
+  /* word-break: break-all; */
+}
